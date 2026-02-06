@@ -1,66 +1,88 @@
-# Proyecto: Lista de Tareas (Todo)
+Lista de Tareas - Proyecto JavaScript
+Descripción
 
-Pequeña aplicación de ejemplo para una lista de tareas, creada como parte del curso "CursoDeJS".
+Este proyecto consiste en una aplicación web de lista de tareas (To-Do App) desarrollada utilizando HTML, CSS y JavaScript puro.
 
-## Descripción
+El objetivo principal fue practicar manipulación del DOM, manejo de eventos, uso de localStorage y mejorar una aplicación básica agregando nuevas funcionalidades que la hicieran más completa y dinámica.
 
-Aplicación web simple que permite añadir, marcar como completada y eliminar tareas. Ideal para practicar JavaScript, DOM y manejo de eventos.
+No se utilizó ningún framework ni librería externa.
 
-## Características
+Funcionalidades implementadas
 
-- Añadir nuevas tareas
-- Marcar tareas como completadas
-- Eliminar tareas
-- Interfaz minimalista y fácil de entender
+La aplicación permite:
 
-## Cómo ejecutar
+Agregar nuevas tareas
 
-Opción 1 — Abrir directamente:
+Marcar tareas como completadas
 
-1. Abrir el archivo [proyecto-todo/index.html](proyecto-todo/index.html) en un navegador.
+Editar el texto de una tarea existente
 
-Opción 2 — Servidor local (recomendado para evitar restricciones de CORS o rutas):
+Eliminar tareas con una animación previa
 
-```bash
-cd "$(pwd)"
-python3 -m http.server 8000
-# Luego abrir http://localhost:8000/proyecto-todo/ en el navegador
-```
+Asignar una fecha límite a cada tarea
 
-## Uso
+Clasificar tareas por categoría (personal, trabajo, estudio)
 
-1. Escribir el texto de la tarea en el campo correspondiente.
-2. Pulsar el botón para añadir la tarea.
-3. Hacer clic en una tarea para marcarla como completada o usar el botón de eliminar para borrarla.
+Filtrar tareas por:
 
-## Estructura del proyecto
+Todas
 
-- [proyecto-todo/index.html](proyecto-todo/index.html)
-- [proyecto-todo/script.js](proyecto-todo/script.js)
-- [proyecto-todo/styles.css](proyecto-todo/styles.css)
-- [01-guia-basica-javascript.md](01-guia-basica-javascript.md)
-- [02-proyecto-lista-tareas.md](02-proyecto-lista-tareas.md)
+Pendientes
 
-## Tecnologías
+Completadas
 
-- HTML
-- CSS
-- JavaScript (vanilla)
+Por vencer
 
-## Contribuir
+Cambiar entre modo claro y modo oscuro
 
-1. Haz un fork del repositorio.
-2. Crea una rama nueva para tu mejora: `git checkout -b mi-mejora`.
-3. Envía un pull request describiendo los cambios.
+Guardar automáticamente las tareas en el navegador usando localStorage
 
-## Licencia
+Qué se practicó
 
-Este proyecto se distribuye bajo la licencia MIT. Puedes adaptar y reutilizar el código.
+Durante el desarrollo del proyecto trabajé principalmente:
 
-## Contacto
+Manipulación y actualización dinámica del DOM
 
-Si tienes preguntas o sugerencias, abre un issue o contacta al autor del curso.
+Eventos como submit, click y change
 
-## Clonar
+Métodos de arrays como map, filter, find y unshift
 
-git clone https://github.com/michel-lopez-franco/CursoDeJS.git
+Manejo de objetos en JavaScript
+
+Uso de localStorage para persistencia de datos
+
+Comparación y manejo de fechas
+
+Animaciones básicas con CSS
+
+Organización y estructuración del código
+
+Estructura del proyecto
+
+El proyecto está dividido en tres archivos principales:
+
+index.html: contiene la estructura de la aplicación.
+
+styles.css: contiene los estilos, animaciones y modo oscuro.
+
+script.js: contiene toda la lógica de funcionamiento.
+
+Cómo ejecutar el proyecto
+
+Descargar o clonar los archivos.
+
+Asegurarse de que index.html, styles.css y script.js estén en la misma carpeta.
+
+Abrir el archivo index.html en un navegador.
+
+La aplicación funciona sin necesidad de instalación adicional.
+
+Detalles importantes
+
+Las tareas se almacenan automáticamente en localStorage, por lo que no se pierden al recargar la página.
+
+El modo oscuro también se guarda y se mantiene activo al volver a entrar.
+
+El filtro “por vencer” compara la fecha actual con la fecha límite de cada tarea.
+
+Se agregó una animación antes de eliminar una tarea para mejorar la experiencia visual.
