@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
         <h1>📝 Mi Lista de Tareas</h1>
+
+        <!-- Botón modo oscuro -->
+        <button id="toggle-tema">🌙 Modo oscuro</button>
 
         <!-- Formulario para agregar tareas -->
         <form id="form-tarea">
@@ -18,6 +22,17 @@
                 placeholder="¿Qué necesitas hacer?"
                 required
             >
+
+            <!-- Fecha límite -->
+            <input type="date" id="input-fecha">
+
+            <!-- Categoría -->
+            <select id="input-categoria">
+                <option value="personal">Personal</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="estudio">Estudio</option>
+            </select>
+
             <button type="submit">Agregar</button>
         </form>
 
@@ -26,11 +41,12 @@
             <button class="filtro activo" data-filtro="todas">Todas</button>
             <button class="filtro" data-filtro="pendientes">Pendientes</button>
             <button class="filtro" data-filtro="completadas">Completadas</button>
+            <button class="filtro" data-filtro="vencen">Por vencer</button>
         </div>
 
         <!-- Lista de tareas -->
         <ul id="lista-tareas">
-            <!-- Las tareas se agregarán aquí con JavaScript -->
+            <!-- Las tareas se agregan dinámicamente -->
         </ul>
 
         <!-- Contador -->
